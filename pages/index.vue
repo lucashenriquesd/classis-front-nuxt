@@ -1,5 +1,5 @@
 <template>
-  <Tutorial />
+  <VideoCard />
 </template>
 
 <script lang="ts">
