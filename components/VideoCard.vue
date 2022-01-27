@@ -7,7 +7,7 @@
       </div>
       <div class="info">
         <h2 class="text-2xl leading-7 font-semibold">
-          Title
+          {{ title }}
         </h2>
         <p class="mt-3 text-gray-600">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare sodales elit. Aenean nunc nisl, tempor et fermentum vel, viverra et libero. In eleifend et odio et pellentesque.<br>
@@ -19,7 +19,13 @@
 
 <script>
 export default {
-  name: 'VideoCard'
+  name: 'VideoCard',
+  props: {
+    title: {
+      type: String,
+      default: 'Video'
+    }
+  }
 }
 </script>
 
